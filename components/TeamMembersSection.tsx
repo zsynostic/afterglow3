@@ -128,7 +128,7 @@ export function TeamMembersSection() {
           <p
             className={`text-xl text-muted-foreground font-mono ${isVisible ? "animate-fadeInUp stagger-1" : "opacity-0"}`}
           >
-            {"// HỒ_SƠ_ĐỘI_ĐIỀU_TRA_DỰ_ÁN_AFTERGLOW"}
+            {"// HỒ_SƠ_ĐỘI_ĐIỀU_TRA_DỰ_ÁN"}
           </p>
         </div>
 

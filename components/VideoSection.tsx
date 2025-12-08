@@ -114,7 +114,7 @@ export function VideoSection() {
             <p
               className={`text-xl text-muted-foreground font-mono ${isVisible ? "animate-fadeInUp stagger-1" : "opacity-0"}`}
             >
-              // TUYỆT_VỌNG_ĐIỂN_ẢNH
+              // TUYỆT_VỌNG_ĐIỆN_ẢNH
             </p>
           </div>
 
@@ -155,7 +155,7 @@ export function VideoSection() {
           <p
             className={`text-xl text-muted-foreground font-mono ${isVisible ? "animate-fadeInUp stagger-1" : "opacity-0"}`}
           >
-            // TUYỆT_VỌNG_ĐIỂN_ẢNH
+            // TUYỆT_VỌNG_ĐIỆN_ẢNH
           </p>
         </div>
 
