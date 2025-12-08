@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ignorance – Can it be Changed? How? | Đồ án môn học</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: '#3b82f6', secondary: '#8b5cf6' },
+            borderRadius: {
+              none: '0px',
+              sm: '4px',
+              DEFAULT: '8px',
+              md: '12px',
+              lg: '16px',
+              xl: '20px',
+              '2xl': '24px',
+              '3xl': '32px',
+              full: '9999px',
+              button: '8px',
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Condensed:wght@400;700&family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      :where([class^='ri-'])::before {
+        content: '\f3c2';
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="nav">
+          <img
+            src="https://en.hcmus.edu.vn/wp-content/uploads/2022/07/Logo-01.png"
+            alt="HCMUS Logo"
+            class="nav-logo"
+          />
+          <nav class="nav-links">
+            <a href="#home" class="nav-link">Trang chủ</a>
+            <a href="#about" class="nav-link">Giới thiệu đề tài</a>
+            <a href="#members" class="nav-link">Thành viên</a>
+            <a href="#objectives" class="nav-link">Mục tiêu</a>
+            <a href="#progress" class="nav-link">Tiến độ</a>
+            <a href="#poster" class="nav-link">Poster</a>
+            <a href="#contact" class="nav-link">Liên hệ</a>
+          </nav>
+          <button class="nav-mobile">
+            <i class="ri-menu-line text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <section id="home" class="hero" style="background-image: url('image');">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="mb-4">
+            <span class="text-blue-500 text-6xl font-bold">Afterglow</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="text-blue-500">Ignorance</span> – Can it be
+            <span class="text-purple-500">Changed?</span>
+            <span class="text-orange-500">How?</span>
+          </h1>
+          <p class="hero-text">
+            Khám phá về sự
+            <span class="text-blue-500 font-semibold">thiếu hiểu biết</span>
+            trong xã hội hiện đại và tìm kiếm những phương pháp
+            <span class="text-purple-500 font-semibold">hiệu quả</span> để thay
+            đổi tình trạng này thông qua
+            <span class="text-orange-500 font-semibold">giáo dục và nâng cao nhận thức</span>.
+          </p>
+          <div class="flex gap-md">
+            <a href="#about" class="btn btn-primary">Khám phá dự án</a>
+            <a href="#progress" class="btn btn-outline">Xem tiến độ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Poster Section with Mirror Effect -->
+    <section id="poster" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-orange-500 bg-clip-text text-transparent">Poster Dự Án</h2>
+          <p class="text-xl text-gray-600">
+            Khám phá những phát hiện của chúng tôi về sự thiếu hiểu biết và cách thay đổi thông qua giáo dục và nâng cao nhận thức
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="poster-container relative">
+            <div class="poster-image">
+              <img src="https://placehold.co/600x800/3b82f6/ffffff?text=Afterglow+Poster+Template" alt="Research Poster" class="rounded-lg shadow-xl" />
+            </div>
+            <div class="poster-reflection absolute w-full" style="bottom: -80%; transform: scaleY(-0.3) rotate(180deg); opacity: 0.3; filter: blur(2px);">
+              <img src="https://placehold.co/600x800/3b82f6/ffffff?text=Afterglow+Poster+Template" alt="" class="rounded-lg" />
+            </div>
+          </div>
+          <div class="poster-content space-y-6">
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900">Ignorance – Can it be Changed? How?</h3>
+              <p class="text-gray-600 mt-2 leading-relaxed">Nghiên cứu của chúng tôi khám phá hiện tượng thiếu hiểu biết trong xã hội hiện đại và xác định các phương pháp hiệu quả để giải quyết thông qua các sáng kiến giáo dục và nâng cao nhận thức.</p>
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold text-gray-900">Phát Hiện Chính</h4>
+              <ul class="space-y-2 mt-3">
+                <li class="flex items-center"><i class="ri-check-line text-primary mr-2"></i>Hiểu rõ nguyên nhân gốc rễ của sự thiếu hiểu biết</li>
+                <li class="flex items-center"><i class="ri-check-line text-primary mr-2"></i>Xác định rào cản trong việc tiếp thu kiến thức</li>
+                <li class="flex items-center"><i class="ri-check-line text-primary mr-2"></i>Phương pháp giáo dục hiệu quả cho các đối tượng khác nhau</li>
+                <li class="flex items-center"><i class="ri-check-line text-primary mr-2"></i>Vai trò của truyền thông và công nghệ trong việc chống lại sự thiếu hiểu biết</li>
+              </ul>
+            </div>
+            <div class="flex gap-md">
+              <a href="#" class="btn btn-primary" download>Tải Poster</a>
+              <a href="#about" class="btn btn-outline">Tìm Hiểu Thêm</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="about" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">
+            Giới thiệu đề tài
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Nghiên cứu sâu về hiện tượng thiếu hiểu biết và các giải pháp khả
+            thi để thay đổi tình trạng này
+          </p>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6">
+            <div
+              class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-2xl hover:scale-105 transition-all duration-300 group"
+            >
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/20 rounded-xl mb-4 group-hover:scale-110 transition-transform duration-300"
+              >
+                <i class="ri-lightbulb-line text-xl text-primary"></i>
+              </div>
+              <h3
+                class="text-xl font-semibold text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300"
+              >
+                (text)
+              </h3>
+              <p class="text-gray-600 leading-relaxed">(text)</p>
+            </div>
+            <div
+              class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-2xl hover:scale-105 transition-all duration-300 group"
+            >
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-secondary/10 to-secondary/20 rounded-xl mb-4 group-hover:scale-110 transition-transform duration-300"
+              >
+                <i class="ri-question-line text-xl text-secondary"></i>
+              </div>
+              <h3
+                class="text-xl font-semibold text-gray-900 mb-3 group-hover:text-secondary transition-colors duration-300"
+              >
+                (text)
+              </h3>
+              <p class="text-gray-600 leading-relaxed">(text)</p>
+            </div>
+            <div
+              class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-2xl hover:scale-105 transition-all duration-300 group"
+            >
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-orange-100 to-orange-200 rounded-xl mb-4 group-hover:scale-110 transition-transform duration-300"
+              >
+                <i class="ri-target-line text-xl text-orange-600"></i>
+              </div>
+              <h3
+                class="text-xl font-semibold text-gray-900 mb-3 group-hover:text-orange-600 transition-colors duration-300"
+              >
+                (text)
+              </h3>
+              <p class="text-gray-600 leading-relaxed">(text)</p>
+            </div>
+          </div>
+          <div class="relative group">
+            <img
+              src="(image_url)"
+              alt="About Image"
+              class="w-full h-96 object-cover object-top rounded-3xl shadow-2xl transition-all duration-300 group-hover:scale-105 group-hover:shadow-3xl"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="members" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Thành viên nhóm</h2>
+          <p class="text-xl text-gray-600">
+            Đội ngũ thành viên đầy nhiệt huyết và tận tâm
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="team-member p-6 rounded-2xl text-center hover:scale-105 transition-all duration-300 group">
+            <div class="team-member-image w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center">
+              <i class="ri-user-line text-3xl text-gray-500"></i>
+            </div>
+            <div class="team-member-info">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Trần Ngọc Dũng</h3>
+              <p class="text-blue-500 font-medium mb-2">Trưởng nhóm</p>
+              <div class="social-links flex justify-center space-x-3">
+                <a href="#" class="social-link w-8 h-8 flex items-center justify-center">
+                  <i class="ri-facebook-line text-blue-500 hover:text-blue-700 cursor-pointer"></i>
+                </a>
+                <a href="#" class="social-link w-8 h-8 flex items-center justify-center">
+                  <i class="ri-mail-line text-blue-500 hover:text-blue-700 cursor-pointer"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl text-center shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 group border border-gray-100"
+          >
+            <div
+              class="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center"
+            >
+              <i class="ri-user-line text-3xl text-gray-500"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+              Ngô Đại Thiên Phúc
+            </h3>
+            <p class="text-primary font-medium mb-2">Chỉnh sửa video</p>
+            <div class="flex justify-center space-x-3">
+              <div class="w-8 h-8 flex items-center justify-center">
+                <i
+                  class="ri-mail-line text-gray-500 hover:text-primary cursor-pointer"
+                ></i>
+              </div>
+              <div class="w-8 h-8 flex items-center justify-center">
+                <i
+                  class="ri-linkedin-line text-gray-500 hover:text-primary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl text-center shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 group border border-gray-100"
+          >
+            <div
+              class="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center"
+            >
+              <i class="ri-user-line text-3xl text-gray-500"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+              Trần Nguyễn Hoàng Huy
+            </h3>
+            <p class="text-primary font-medium mb-2">Website</p>
+            <div class="flex justify-center space-x-3">
+              <div class="w-8 h-8 flex items-center justify-center">
+                <i
+                  class="ri-mail-line text-gray-500 hover:text-primary cursor-pointer"
+                ></i>
+              </div>
+              <div class="w-8 h-8 flex items-center justify-center">
+                <i
+                  class="ri-linkedin-line text-gray-500 hover:text-primary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl text-center shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 group border border-gray-100"
+          >
+            <div
+              class="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center"
+            >
+              <i class="ri-user-line text-3xl text-gray-500"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+              Từ Nguyễn Thuận Thiên
+            </h3>
+            <p class="text-primary font-medium mb-2">Kịch bản</p>
+            <div class="flex justify-center space-x-3">
+              <div class="w-8 h-8 flex items-center justify-center">
+                <i
+                  class="ri-mail-line text-gray-500 hover:text-primary cursor-pointer"
+                ></i>
+              </div>
+              <div class="w-8 h-8 flex items-center justify-center">
+                <i
+                  class="ri-linkedin-line text-gray-500 hover:text-primary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl text-center shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 group border border-gray-100"
+          >
+            <div
+              class="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center"
+            >
+              <i class="ri-user-line text-3xl text-gray-500"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+              Võ Đăng Khôi
+            </h3>
+            <p class="text-primary font-medium mb-2">Kịch bản</p>
+            <div class="flex justify-center space-x-3">
+              <div class="w-8 h-8 flex items-center justify-center">
+                <i
+                  class="ri-mail-line text-gray-500 hover:text-primary cursor-pointer"
+                ></i>
+              </div>
+              <div class="w-8 h-8 flex items-center justify-center">
+                <i
+                  class="ri-linkedin-line text-gray-500 hover:text-primary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl text-center shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 group border border-gray-100"
+          >
+            <div
+              class="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center"
+            >
+              <i class="ri-user-line text-3xl text-gray-500"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+              Đào Hải Sơn
+            </h3>
+            <p class="text-primary font-medium mb-2">Kịch bản</p>
+            <div class="flex justify-center space-x-3">
+              <div class="w-8 h-8 flex items-center justify-center">
+                <i
+                  class="ri-mail-line text-gray-500 hover:text-primary cursor-pointer"
+                ></i>
+              </div>
+              <div class="w-8 h-8 flex items-center justify-center">
+                <i
+                  class="ri-linkedin-line text-gray-500 hover:text-primary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="objectives" class="py-20 bg-gray-50 relative overflow-hidden">
+      <div
+        class="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-white to-transparent"
+      ></div>
+      <div
+        class="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-white to-transparent"
+      ></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-orange-500 bg-clip-text text-transparent">Mục tiêu dự án</h2>
+          <p class="text-xl text-gray-600">
+            Những mục tiêu cụ thể và chiến lược phát triển dự án
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-gradient-to-br from-white to-gray-50 p-8 rounded-3xl shadow-lg border border-gray-100 hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden"
+          >
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-secondary"></div>
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/20 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300"
+            >
+              <i class="fas fa-search text-2xl text-primary"></i>
+            </div>
+            <h3
+              class="text-xl font-semibold text-gray-900 mb-4 group-hover:text-primary transition-colors duration-300"
+            >
+              Nghiên cứu
+            </h3>
+            <p class="text-gray-600 leading-relaxed">Tìm hiểu sâu về vấn đề thiếu hiểu biết trong xã hội hiện đại</p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-white to-gray-50 p-8 rounded-3xl shadow-lg border border-gray-100 hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden"
+          >
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-secondary to-secondary-dark"></div>
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-gradient-to-br from-secondary/10 to-secondary/20 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300"
+            >
+              <i class="fas fa-lightbulb text-2xl text-secondary"></i>
+            </div>
+            <h3
+              class="text-xl font-semibold text-gray-900 mb-4 group-hover:text-secondary transition-colors duration-300"
+            >
+              Giáo dục
+            </h3>
+            <p class="text-gray-600 leading-relaxed">Phát triển các phương pháp giáo dục hiệu quả để nâng cao nhận thức</p>
+          </div>
+          <div
+            class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100 hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 group"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-gradient-to-br from-orange-100 to-orange-200 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300"
+            >
+              <i class="ri-bar-chart-line text-2xl text-orange-600"></i>
+            </div>
+            <h3
+              class="text-xl font-semibold text-gray-900 mb-4 group-hover:text-orange-600 transition-colors duration-300"
+            >
+              (text)
+            </h3>
+            <p class="text-gray-600 leading-relaxed">(text)</p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-white to-gray-50 p-8 rounded-3xl shadow-lg border border-gray-100 hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden"
+          >
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-500 to-green-600"></div>
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-gradient-to-br from-green-100 to-green-200 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300"
+            >
+              <i class="fas fa-book text-2xl text-green-600"></i>
+            </div>
+            <h3
+              class="text-xl font-semibold text-gray-900 mb-4 group-hover:text-green-600 transition-colors duration-300"
+            >
+              Cộng đồng
+            </h3>
+            <p class="text-gray-600 leading-relaxed">Xây dựng cộng đồng học tập và chia sẻ kiến thức</p>
+          </div>
+          <div
+            class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100 hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 group"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300"
+            >
+              <i class="ri-book-line text-2xl text-purple-600"></i>
+            </div>
+            <h3
+              class="text-xl font-semibold text-gray-900 mb-4 group-hover:text-purple-600 transition-colors duration-300"
+            >
+              (text)
+            </h3>
+            <p class="text-gray-600 leading-relaxed">(text)</p>
+          </div>
+          <div
+            class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100 hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 group"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-gradient-to-br from-red-100 to-red-200 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300"
+            >
+              <i class="ri-rocket-line text-2xl text-red-600"></i>
+            </div>
+            <h3
+              class="text-xl font-semibold text-gray-900 mb-4 group-hover:text-red-600 transition-colors duration-300"
+            >
+              (text)
+            </h3>
+            <p class="text-gray-600 leading-relaxed">(text)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Progress section removed as requested -->
+    <section id="contact" class="py-20 bg-primary text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4">Liên hệ với chúng tôi</h2>
+          <p class="text-xl text-blue-100">
+            Hãy để lại thông tin để được tư vấn và hỗ trợ
+          </p>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-12">
+          <div class="space-y-8">
+            <div class="flex items-start space-x-4">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-white/10 rounded-lg"
+              >
+                <i class="ri-map-pin-line text-xl"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">Địa chỉ</h3>
+                <p class="text-blue-100">
+                  Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM<br />227 đường
+                  Nguyễn Văn Cừ, Phường Chợ Quán, Thành phố Hồ Chí Minh
+                </p>
+              </div>
+            </div>
+            <div class="flex space-x-4">
+              <div
+                class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-lg hover:bg-white/20 transition-colors cursor-pointer"
+              >
+                <i class="ri-facebook-line"></i>
+              </div>
+              <div
+                class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-lg hover:bg-white/20 transition-colors cursor-pointer"
+              >
+                <i class="ri-twitter-line"></i>
+              </div>
+              <div
+                class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-lg hover:bg-white/20 transition-colors cursor-pointer"
+              >
+                <i class="ri-linkedin-line"></i>
+              </div>
+              <div
+                class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-lg hover:bg-white/20 transition-colors cursor-pointer"
+              >
+                <i class="ri-youtube-line"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white p-8 rounded-3xl shadow-2xl relative overflow-hidden group"
+          >
+            <div
+              class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-secondary to-orange-500 rounded-t-3xl"
+            ></div>
+            <form id="contact-form" class="space-y-6">
+              <div>
+                <label class="block text-sm font-medium mb-2 text-gray-700"
+                  >Họ và tên</label
+                >
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-2xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300 hover:shadow-md"
+                  placeholder="Nhập họ và tên của bạn"
+                />
+              </div>
+              <div>
+                <label class="block text-sm font-medium mb-2 text-gray-700"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-2xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300 hover:shadow-md"
+                  placeholder="Nhập địa chỉ email"
+                />
+              </div>
+              <div>
+                <label class="block text-sm font-medium mb-2 text-gray-700"
+                  >Chủ đề</label
+                >
+                <input
+                  type="text"
+                  name="subject"
+                  required
+                  class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-2xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300 hover:shadow-md"
+                  placeholder="Chủ đề tin nhắn"
+                />
+              </div>
+              <div>
+                <label class="block text-sm font-medium mb-2 text-gray-700"
+                  >Nội dung</label
+                >
+                <div class="relative">
+                  <textarea
+                    rows="4"
+                    name="message"
+                    required
+                    maxlength="500"
+                    class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-2xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300 hover:shadow-md resize-none"
+                    placeholder="Nhập nội dung tin nhắn của bạn (tối đa 500 ký tự)"
+                  ></textarea>
+                  <div class="absolute bottom-3 right-3 text-xs text-gray-400">
+                    <span id="char-count">0</span>/500
+                  </div>
+                </div>
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 !rounded-button font-semibold hover:from-blue-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg whitespace-nowrap relative overflow-hidden group"
+              >
+                <span class="relative z-10">Gửi tin nhắn</span>
+                <div
+                  class="absolute inset-0 bg-gradient-to-r from-secondary to-primary translate-x-full group-hover:translate-x-0 transition-transform duration-300"
+                ></div>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div>
+            <img
+              src="https://en.hcmus.edu.vn/wp-content/uploads/2022/07/Logo-01.png"
+              alt="HCMUS Logo"
+              class="h-8 w-auto mb-4"
+            />
+            <p class="text-gray-400 mb-4">
+              Dự án nghiên cứu về sự thiếu hiểu biết và các giải pháp thay đổi
+              tích cực trong xã hội.
+            </p>
+            <div class="flex space-x-4">
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors cursor-pointer"
+              >
+                <i class="ri-facebook-line text-sm"></i>
+              </div>
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors cursor-pointer"
+              >
+                <i class="ri-twitter-line text-sm"></i>
+              </div>
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors cursor-pointer"
+              >
+                <i class="ri-linkedin-line text-sm"></i>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Liên kết nhanh</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#about"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Giới thiệu đề tài</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#members"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Thành viên</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#objectives"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Mục tiêu</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#progress"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Tiến độ</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Thông tin liên hệ</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li>Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM</li>
+              <li>
+                227 đường Nguyễn Văn Cừ, Phường Chợ Quán, Thành phố Hồ Chí Minh
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+          <p class="text-gray-400">
+            © 2025 Afterglow fit@hcmus. Tất cả quyền được bảo lưu.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script id="navigation-scroll">
+      document.addEventListener('DOMContentLoaded', function () {
+        const navLinks = document.querySelectorAll('nav a[href^="#"]');
+        navLinks.forEach((link) => {
+          link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            if (targetSection) {
+              targetSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+              });
+            }
+          });
+        });
+      });
+    </script>
+    <script id="progress-animation">
+      document.addEventListener('DOMContentLoaded', function () {
+        const progressBar = document.querySelector('#progress .bg-primary');
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setTimeout(() => {
+                progressBar.style.width = '0%';
+              }, 500);
+            }
+          });
+        });
+        if (progressBar) {
+          observer.observe(progressBar.parentElement);
+        }
+      });
+    </script>
+    <script id="form-submission">
+      document.addEventListener('DOMContentLoaded', function () {
+        const contactForm = document.querySelector('#contact-form');
+        const messageInput = contactForm?.querySelector(
+          'textarea[name="message"]'
+        );
+        const charCount = document.querySelector('#char-count');
+
+        if (messageInput && charCount) {
+          messageInput.addEventListener('input', function () {
+            const currentLength = this.value.length;
+            charCount.textContent = currentLength;
+
+            if (currentLength > 500) {
+              this.value = this.value.substring(0, 500);
+              charCount.textContent = 500;
+            }
+
+            if (currentLength >= 450) {
+              charCount.style.color = '#ef4444';
+            } else if (currentLength >= 400) {
+              charCount.style.color = '#f59e0b';
+            } else {
+              charCount.style.color = '#9ca3af';
+            }
+          });
+        }
+
+        if (contactForm) {
+          contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const messageValue = messageInput?.value || '';
+            if (messageValue.length > 500) {
+              showNotification(
+                'Nội dung tin nhắn không được vượt quá 500 ký tự!',
+                'error'
+              );
+              return;
+            }
+
+            const formData = new FormData(this);
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalText = submitButton.innerHTML;
+
+            submitButton.innerHTML =
+              '<span class="relative z-10">Đang gửi...</span>';
+            submitButton.disabled = true;
+            submitButton.style.opacity = '0.7';
+
+            setTimeout(() => {
+              showNotification(
+                'Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi trong thời gian sớm nhất.',
+                'success'
+              );
+              this.reset();
+              if (charCount) charCount.textContent = '0';
+              submitButton.innerHTML = originalText;
+              submitButton.disabled = false;
+              submitButton.style.opacity = '1';
+            }, 1500);
+          });
+        }
+
+        function showNotification(message, type) {
+          const notification = document.createElement('div');
+          notification.className = `fixed top-4 right-4 z-50 px-6 py-4 rounded-2xl shadow-2xl transform translate-x-full transition-all duration-300 ${
+            type === 'success'
+              ? 'bg-green-500 text-white'
+              : 'bg-red-500 text-white'
+          }`;
+          notification.innerHTML = `
+<div class="flex items-center space-x-3">
+<i class="ri-${
+            type === 'success' ? 'check' : 'error-warning'
+          }-line text-xl"></i>
+<span class="font-medium">${message}</span>
+</div>
+`;
+          document.body.appendChild(notification);
+
+          setTimeout(() => {
+            notification.style.transform = 'translateX(0)';
+          }, 100);
+
+          setTimeout(() => {
+            notification.style.transform = 'translateX(full)';
+            setTimeout(() => {
+              document.body.removeChild(notification);
+            }, 300);
+          }, 4000);
+        }
+      });
+    </script>
+  </body>
+</html>
