@@ -11,7 +11,6 @@ const teamMembers = [
   { stt: 3, mssv: "25127354", name: "Trần Nguyễn Hoàng Huy", email: "tnhhuy2531@clc.fitus.edu.vn", isLeader: false },
   { stt: 4, mssv: "25127395", name: "Võ Đăng Khôi", email: "vdkhoi2530@clc.fitus.edu.vn", isLeader: false },
   { stt: 5, mssv: "25127461", name: "Ngô Đại Thiên Phúc", email: "ndtphuc2524@clc.fitus.edu.vn", isLeader: false },
-  { stt: 6, mssv: "25127488", name: "Đào Hải Sơn", email: "dhson2506@clc.fitus.edu.vn", isLeader: false },
 ]
 
 const mustDoRules = [
