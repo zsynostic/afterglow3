@@ -125,7 +125,7 @@ export function VideoSection() {
                 ref={videoRef}
                 className="absolute inset-0 w-full h-full"
                 style={{ opacity: videoOpacity }}
-                src="https://youtu.be/mNGi_9KacSY"
+                src="https://www.youtube.com/embed/mNGi_9KacSY?autoplay=0&rel=0"
                 title="Afterglow Project Video"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -277,7 +277,7 @@ export function VideoSection() {
                   opacity: videoOpacity,
                   filter: `blur(${(1 - videoOpacity) * 5}px)`,
                 }}
-                src="https://youtu.be/mNGi_9KacSY"
+                src="https://www.youtube.com/embed/mNGi_9KacSY?autoplay=0&rel=0"
                 title="Afterglow Project Video"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
